@@ -1,0 +1,116 @@
+body {
+	background-color: 	#D3D3D3;
+	font-family: "Rubik";
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+    outline: none;
+}
+
+.name {
+	text-align: center;
+	color: white;
+	font-size:14pt;
+	padding-bottom: 8px;
+}
+
+button.action {
+	width: 100px;
+	height: 3em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: "Rubik";
+    font-size:11pt;
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+
+button.action.dc:hover {
+	background-color: #4CA4DD;
+}
+
+button.action.marvel:hover {
+	background-color: #C61213;
+}
+
+button.action:hover {
+	background-color: white;
+    color: #343F51;
+}
+
+button.remove {
+	float: right;
+  	width: 32px;
+  	height: 32px;
+  	background-color: inherit;
+  	right: 51%;
+  	border: none;
+}
+
+button.remove:before {
+	content: 'X';
+	color: black;
+	font-weight: 300;
+	font-family: Arial, sans-serif;
+}
+
+button.remove:hover {
+	opacity: .3;
+}
+
+.hero-list {
+	position: absolute;
+	background-color: white;
+	border: 1px solid #E5E5E5;
+	width: 75%;
+	padding: 16px;
+	margin-left: 160px;
+	box-shadow: 2px 2px 5px #696969;
+}
+
+.hero-list-item {
+	display: block;
+	height: 32px;
+	width: 100%;
+	border-top: 1px dotted #A9A9A9;
+	border-top: 1px dotted #A9A9A9;
+	text-align: center;
+	line-height: 2;
+	color:  #333333;
+
+}
+
+.donut {
+	margin-left: 32px;
+}
+
+div.pie-chart {
+	background-color: white;
+	box-shadow: 2px 2px 5px #696969;
+	border: 1px solid #E5E5E5;
+	position: absolute;
+	right: 250px;
+}
+
+.hero-list-item.dc {
+	background-color: #7ebde7;
+}
+
+.hero-list-item.marvel {
+	background-color: #d84b4b;
+}
+
+.sidebar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
